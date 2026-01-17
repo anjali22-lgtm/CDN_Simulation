@@ -5,7 +5,7 @@
 
 ## 🔹 Features
 
-- *Origin Server:** Stores all content (images, videos, files). Responds to edge server requests when cache miss occurs.
+- **Origin Server:** Stores all content (images, videos, files). Responds to edge server requests when cache miss occurs.
 - **Edge Servers:** Maintain cache for faster access and reduced load on the origin server.
 - **Router / API Gateway:** Direct client requests to the appropriate edge server based on routing logic.
 - **Cache Mechanism:** Returns cached content immediately if available; otherwise, fetches from the origin server.
