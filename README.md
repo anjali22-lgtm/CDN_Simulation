@@ -22,10 +22,49 @@
 
 ---
 
-## 🔹 How to Run
-
-1. Clone the repository:
-
-```bash
+1️⃣ Clone Repository
 git clone https://github.com/anjali22-lgtm/CDN_Simulation.git
 cd CDN_Simulation
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Start Origin Server
+cd origin-server
+node server.js
+
+
+Runs on http://localhost:4000
+
+4️⃣ Start Edge Servers (Open separate terminals)
+
+Edge Server 1
+
+cd edge-servers
+node edge1.js
+
+
+Runs on http://localhost:5000
+
+Edge Server 2
+
+cd edge-servers
+node edge2.js
+
+
+Runs on http://localhost:6000
+
+5️⃣ Start Router
+cd router
+node router.js
+
+
+Runs on http://localhost:7000
+
+🧪 API Testing
+
+Use Postman or browser:
+
+GET http://localhost:7000/content/image1
+GET http://localhost:7000/content/video1
+GET http://localhost:7000/content/file1
